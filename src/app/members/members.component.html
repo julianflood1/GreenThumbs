@@ -2,10 +2,14 @@
 
 <p>Here are all of our current Green Thumbs!</p>
 
-<div *ngFor="let member of members | async" (click)="goToDetailPage(member)" class="panel panel-default">
+<div *ngFor="let member of members | async" class="panel panel-default">
   <div class=panel-body>
-    <h3>{{member.name}} - <em>{{member.thumbName}}</em></h3>
-    <h4>{{member.specialty}}</h4>
-    <p>{{member.age}}</p>
+    <h3 (click)="goToDetailPage(member)">{{member.name}} - <em>{{member.thumbName}}</em></h3>
+    <div *ngIf="currentRoute === '/admin'">
+      <h4>{{member.specialty}}</h4>
+      <p>{{member.age}}</p>
+      <hr>
+      <app-edit-member [selectedMember]="member"></app-edit-member>
+    </div>
   </div>
 </div>

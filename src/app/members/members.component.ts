@@ -12,8 +12,8 @@ import { FirebaseListObservable } from 'angularfire2/database';
   providers: [MemberService]
 })
 export class MembersComponent implements OnInit {
-
   members: FirebaseListObservable<any[]>;
+  currentRoute: string = this.router.url;
 
 
   constructor(private router: Router, private memberService: MemberService) {}

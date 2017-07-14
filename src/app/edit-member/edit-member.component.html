@@ -1,0 +1,22 @@
+<h4>Edit Member</h4>
+
+<label>Edit Name:</label>
+<input [(ngModel)]="selectedMember.name">
+<br>
+
+<label>Edit Member Green Thumb Name:</label>
+<input [(ngModel)]="selectedMember.thumbName">
+<br>
+
+<label>Edit Member Age:</label>
+<input [(ngModel)]="selectedMember.age">
+<br>
+
+<label>Edit Member Experience:</label>
+<input [(ngModel)]="selectedMember.experience">
+<br>
+
+<label>Edit Member Specialty:</label>
+<input [(ngModel)]="selectedMember.specialty">
+
+<button (click)="beginUpdatingMember(selectedMember)">Update Member</button>
