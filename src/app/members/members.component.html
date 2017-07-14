@@ -1,0 +1,9 @@
+<h2>Certified Green Thumbs</h2>
+
+<p>Here are all of our current Green Thumbs!</p>
+
+<div *ngFor="let member of members" (click)="goToDetailPage(member)" class="panel panel-default">
+  <div class=panel-body>
+    <h3>{{member.name}} - <em>{{member.thumbName}}</em></h3>
+  </div>
+</div>
