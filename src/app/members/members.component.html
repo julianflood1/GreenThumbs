@@ -2,8 +2,10 @@
 
 <p>Here are all of our current Green Thumbs!</p>
 
-<div *ngFor="let member of members" (click)="goToDetailPage(member)" class="panel panel-default">
+<div *ngFor="let member of members | async" (click)="goToDetailPage(member)" class="panel panel-default">
   <div class=panel-body>
     <h3>{{member.name}} - <em>{{member.thumbName}}</em></h3>
+    <h4>{{member.specialty}}</h4>
+    <p>{{member.age}}</p>
   </div>
 </div>

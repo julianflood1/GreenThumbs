@@ -1,0 +1,39 @@
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Add a new Green Thumb!</h3>
+  </div>
+  <div class="panel-body">
+    <div>
+      <div>
+        <label>Name:</label>
+        <br>
+        <input #newName>
+      </div>
+
+      <div>
+        <label>Green Thumb Name:</label>
+        <br>
+        <input #newThumbName>
+      </div>
+
+      <div>
+        <label>Age:</label>
+        <br>
+        <input #newAge>
+      </div>
+
+      <div>
+        <label>Experience:</label>
+        <br>
+        <input #newExperience>
+      </div>
+
+      <div>
+        <label>Specialty:</label>
+        <br>
+        <input #newSpecialty>
+      </div>
+      <button (click)="submitForm(newName.value, newThumbName.value, newAge.value, newExperience.value, newSpecialty.value)">Add Member!</button>
+    </div>
+  </div>
+</div>
