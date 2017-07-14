@@ -1,0 +1,10 @@
+.panel {
+  background-image: url('/assets/img/panel.jpg');
+  color: white;
+}
+
+button {
+  width: 200px;
+  color: black;
+  background-color: yellow;
+}

@@ -1,6 +1,8 @@
-<div>
-  <h2>This is {{(memberToDisplay | async)?.name}} - {{(memberToDisplay | async)?.thumbName}}</h2>
-  <h4>{{(memberToDisplay | async)?.age}} years old</h4>
-  <h4>{{(memberToDisplay | async)?.experience}} years of experience</h4>
-  <h4>Specialty: {{(memberToDisplay | async)?.specialty}}</h4>
+<div id="detail">
+  <div id=inner-panel>
+    <h2>This is {{(memberToDisplay | async)?.name}} - {{(memberToDisplay | async)?.thumbName}}</h2>
+    <h4>{{(memberToDisplay | async)?.age}} years old</h4>
+    <h4>{{(memberToDisplay | async)?.experience}} years of experience</h4>
+    <h4>Specialty: {{(memberToDisplay | async)?.specialty}}</h4>
+  </div>
 </div>

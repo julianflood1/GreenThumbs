@@ -1,0 +1,10 @@
+#detail {
+  height: 500px;
+  background-image: url('/assets/img/garden.jpg');
+  background-size: cover;
+  color: black;
+}
+#inner-panel {
+  background-color: lightgrey ;
+  padding: 10px;
+}

@@ -1,0 +1,9 @@
+#welcome {
+  height: 500px;
+  background-image: url('/assets/img/main.jpg');
+  background-size: cover;
+}
+
+h2 {
+  color: white;
+}
