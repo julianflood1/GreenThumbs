@@ -28,5 +28,10 @@ export class MembersComponent implements OnInit {
     this.router.navigate(['members', clickedMember.$key]);
   }
 
+  onChange(optionFromMenu) {
+  this.age = optionFromMenu;
+}
+
+  age: string = "allAges";
 
 }

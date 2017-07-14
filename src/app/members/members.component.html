@@ -2,7 +2,13 @@
 
 <p>Here are all of our current Green Thumbs!</p>
 
-<div *ngFor="let member of members | async" class="panel panel-default">
+<select (change)="onChange($event.target.value)">
+  <option value="allAges" selected="selected">All Ages</option>
+  <option value="underAge">Under 60 Years Old</option>
+  <option value="overAge">Over 60 Years Old</option>
+</select>
+
+<div *ngFor="let member of members | async | ageSort:age" class="panel panel-default">
   <div class=panel-body>
     <h3 (click)="goToDetailPage(member)">{{member.name}} - <em>{{member.thumbName}}</em></h3>
     <div *ngIf="currentRoute === '/admin'">
