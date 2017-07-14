@@ -32,4 +32,8 @@ export class MemberService {
                               specialty: localUpdatedMember.specialty});
 }
 
+deleteMember(localMemberToDelete){
+  var memberEntryInFirebase = this.getMemberById(localMemberToDelete.$key);
+  memberEntryInFirebase.remove();
+}
 }
